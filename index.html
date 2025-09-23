@@ -570,10 +570,10 @@
                     <div class="screen-content">
                         <h2 class="chart-title"><i class="fas fa-comments"></i> AI Assistant</h2>
                         <div class="nlp-container">
-                            <div class="upload-container">
-                                <p>📁 Upload Excel/CSV to replace sample data:</p>
+                            <div class="upload-container" >
+                                
                                 <input type="file" id="file-upload" accept=".xlsx,.xls,.csv" style="display:none">
-                                <button class="upload-btn" id="upload-trigger">Choose File</button>
+                               
                                 <div class="upload-status" id="upload-status"></div>
                             </div>
 
@@ -599,7 +599,7 @@
                             </div>
 
                             <div class="export-buttons">
-                                <button class="export-btn pdf" id="export-pdf">Export to PDF</button>
+                                
                                 <button class="export-btn excel" id="export-excel">Export to Excel</button>
                             </div>
                         </div>
@@ -956,7 +956,9 @@
         menuToggle.addEventListener('click', () => sidebar.classList.toggle('open'));
 
         /* ========== FILE UPLOAD (Excel/CSV) ========== */
-        document.getElementById('upload-trigger').addEventListener('click', () => document.getElementById('file-upload').click());
+     
+	 
+	 
         document.getElementById('file-upload').addEventListener('change', e => {
             const file = e.target.files[0];
             if(!file) return;
@@ -1399,5 +1401,4 @@
         showScreen('dashboard');
     </script>
 </body>
-
 </html>
