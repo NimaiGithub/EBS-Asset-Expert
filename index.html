@@ -438,11 +438,11 @@ document.addEventListener('dragstart', e => e.preventDefault());
             <div class="login-form">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" class="form-control" placeholder="Enter your username" value="KIPIC">
+                    <input type="text" id="username" class="form-control" placeholder="Enter your username" value="nmohanty">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" class="form-control" placeholder="Enter your password" value="KIPIC">
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password" value="12345">
                 </div>
                 <button id="login-btn" class="login-btn">Sign In</button>
                 <div id="login-error" class="login-error">Invalid username or password. Please try again.</div>
@@ -503,8 +503,8 @@ document.addEventListener('dragstart', e => e.preventDefault());
                 <div class="user-profile">
                     <div class="user-avatar"><i class="fas fa-user"></i></div>
                     <div class="user-info">
-                        <div class="user-name">KIPIC</div>
-                        <div class="user-email">Admin@kipic.com.kw</div>
+                        <div class="user-name">nmohanty</div>
+                        <div class="user-email">Admin@knpc.com.kw</div>
                     </div>
                 </div>
                 <button id="logout-btn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
@@ -932,7 +932,7 @@ document.addEventListener('dragstart', e => e.preventDefault());
         loginBtn.addEventListener('click', () => {
             const u = document.getElementById('username').value;
             const p = document.getElementById('password').value;
-            if(u==='KIPIC' && p==='KIPIC') {
+            if(u==='nmohanty' && p==='12345') {
                 loginScreen.style.display = 'none';
                 mainApp.style.display = 'block';
             } else loginError.style.display = 'block';
@@ -1421,4 +1421,5 @@ document.addEventListener('dragstart', e => e.preventDefault());
     </script>
 </body>
 </html>
+
 
