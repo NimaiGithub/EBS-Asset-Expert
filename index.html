@@ -15,6 +15,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
+
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  const blocked = (
+    e.key === 'F12' ||
+    (e.ctrlKey && e.key.toLowerCase() === 'u') ||
+    (e.ctrlKey && e.shiftKey && ['i','c','j'].includes(e.key.toLowerCase()))
+  );
+  if (blocked) {
+    e.preventDefault();
+    alert('Developer shortcuts are disabled on this page.');
+  }
+});
+document.addEventListener('selectstart', e => e.preventDefault());
+document.addEventListener('dragstart', e => e.preventDefault());
+</script>
+
+	
     <style>
         :root {
             --primary: #1a4b8c;
@@ -1402,3 +1421,4 @@
     </script>
 </body>
 </html>
+
